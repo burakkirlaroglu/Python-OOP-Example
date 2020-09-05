@@ -12,9 +12,9 @@ class Investment(BankAccount):
     #overriding
     def withdraw(self, amount):
         phone_code = random.randint(1,1000)
-        print("Telefona gelen onay kodu: ", phone_code)
+        print("Phone Verify code: ", phone_code)
         if amount > 650:
-            onay = int(input("Telefona gelen kodu giriniz: "))
+            onay = int(input("Please enter verify code: "))
             if onay == phone_code:
                 self._balance -= amount
                 return self._balance
