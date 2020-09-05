@@ -51,7 +51,7 @@ while True:
         action = int(input("It depend on deposit - push : 1\nIt depends on withdraw - push : 2"))
         print(ca.last_check_num(action))
     else:
-        print("Geçersiz işlem !!!")
+        print("Invalid Process !!!")
 
 
 
